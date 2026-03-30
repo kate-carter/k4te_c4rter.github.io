@@ -1,0 +1,144 @@
+:root {
+  --bg: #1e1e1e;
+  --panel: #252526;
+  --text: #d4d4d4;
+  --muted: #9da5b4;
+  --accent: #4ec9b0;
+  --accent-2: #c586c0;
+  --accent-3: #dcdcaa;
+  --border: #3c3c3c;
+  --link: #9cdcfe;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  line-height: 1.6;
+}
+
+body.font-sans {
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body.font-serif {
+  font-family: Iowan Old Style, Palatino, "Palatino Linotype", "Book Antiqua", Garamond, "Times New Roman", serif;
+}
+
+.shell {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1.2rem 4rem;
+}
+
+.site-header {
+  margin-bottom: 1.2rem;
+}
+
+.back-link {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--accent-3);
+}
+
+.site-title {
+  margin: 0.65rem 0 0.2rem;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: var(--accent-2);
+}
+
+.site-subtitle {
+  margin-top: 0;
+  color: var(--muted);
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.4rem 0 2rem;
+}
+
+.main-nav a {
+  color: var(--link);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  padding: 0.35rem 0.55rem;
+  border-radius: 6px;
+}
+
+.main-nav a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  color: var(--accent-3);
+}
+
+.content a {
+  color: var(--link);
+}
+
+.content code {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1rem 0.25rem;
+}
+
+.content pre {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.content blockquote {
+  border-left: 3px solid var(--accent);
+  margin-left: 0;
+  padding-left: 1rem;
+  color: var(--muted);
+}
+
+.font-toggle {
+  margin-top: 2rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+}
+
+.font-toggle:hover {
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+}
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  padding: 0.45rem 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.post-list time {
+  color: var(--muted);
+  margin-right: 0.6rem;
+}

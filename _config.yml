@@ -1,0 +1,13 @@
+title: Kate Carter
+description: Neuroscience notes, projects, and writing
+url: ""
+baseurl: ""
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+timezone: America/New_York
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

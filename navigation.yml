@@ -1,0 +1,16 @@
+- label: main
+  url: /
+- label: research
+  url: /research/
+- label: proj
+  url: /proj/
+- label: papers
+  url: /papers/
+- label: presentations
+  url: /presentations/
+- label: social
+  url: /social/
+- label: misc
+  url: /misc/
+- label: blog
+  url: /blog/
